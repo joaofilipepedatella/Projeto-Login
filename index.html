@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="estilos/mediaquery.css">
+    
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <title>Tela de Login</title>
 
 </head>
 <body>
     <main>
-        <section>
-            <img src="imagens/imglogin.jpg" alt="Imagem de Bem-Vindo">
+        <section id="login">
+            <div id="imagem">
+                <!-- Imagem na CSS -->
+            </div>
 
-            <div>
+            <div id="formulario">
                 <h1>Bem-Vindo!</h1>
                 <p>Faça seu login para ter acesso à sua conta.</p>
+
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="login" id="login" required placeholder="Seu e-mail." autocomplete="email">
+                        <label for="nome">Login</label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="senha" required placeholder="Sua senha." autocomplete="current-password">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a class="botao" href="esqueci.html">
+                        Esqueci a senha <i class="material-icons">mail</i>
+                    </a>
+                </form>
             </div>
         </section>
     </main>    

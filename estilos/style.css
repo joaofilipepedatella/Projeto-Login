@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: blueviolet;  
+    height: 100vh;
+    width: 100vw;    
+}
+
+main {    
+    position: relative;
+    height: 100vh;
+    width: 100vw;    
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section#login > div#imagem {    
+    background: blueviolet url(../imagens/imglogin.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario {    
+    padding: 10px;        
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+div#formulario > p {
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+    margin: auto;    
+    width: 75%;
+}
+
+div.campo {
+    background-color: blueviolet;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {    
+    font-size: 1em;
+    width: calc(100% - 49px);
+    height: 100%;
+    transform: translateY(-11px);
+    border: 1px solid blueviolet;
+    border-radius: 8px;
+    padding: 4px;      
+}
+
+form  input[type=submit] {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 8px;
+    background-color: #49a09d;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+form  input[type=submit]:hover {
+    background-color: #5ac5c2;
+}
+
+form  a {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.8em; 
+    color: gray;   
+}
+
+form > a.botao > i {
+    font-size: 0.8em;    
+}
